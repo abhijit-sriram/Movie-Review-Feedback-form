@@ -75,9 +75,9 @@ This HTML code represents a customer feedback form for movie reviews. Let's go t
 Overall, this code creates a customer feedback form with required fields for name, telephone number, email, date of survey, and movie review comments, and uses Bootstrap for styling and layout. It also includes error handling using JavaScript to redirect to an error page in case of errors.
   
   
-Understanding AWS S3, EC2 and IAM concepts using feedbackform.html
-
-Creating a Docker image and pushing it to DockerHub
+**Understanding AWS S3, EC2 and IAM concepts using feedbackform.html
+**
+**Creating a Docker image and pushing it to DockerHub**
 
 1.	Make sure you have docker installed on your machine. I am using Docker Desktop for Mac. You will also need to create an account on https://hub.docker.com/ 
 2.	In Eclipse, create a file called Dockerfile. Docker requires the file to be called ‘Dockerfile’ 
@@ -90,7 +90,7 @@ Creating a Docker image and pushing it to DockerHub
 9.	Change the name of you image to be <your username on dockerhub>/<name of the app>:<image tag> using the docker tag command. In my case it is: ‘docker tag moviereview:0.1 abhisri/moviereview:0.1’ 
 10.	Verify that your image is on Docker Hub. Your image is accessible from the internet 
 
-Installing Rancher on AWS 
+**Installing Rancher on AWS **
 
 1.	Log in to the AWS console https://aws.amazon.com/ and create an account. You will need to have a credit card. You can also use an AWS Educate but it has limited capabilities www.awseducate.com 
 2.	I am running Rancher on an Ubuntu EC2 but all you need is an instance that has docker running. 
@@ -105,7 +105,7 @@ Installing Rancher on AWS
 11.	Wait a minute or so then open your browser and copy/paste your public DNS from step f. After some warnings, you should get this screen: 
 12.	Create a password to the admin user. Installing Rancher installs Kubernetes.
 
-Starting a Rancher cluster 
+**Starting a Rancher cluster **
 
 1.	In the global Rancher page, click on ‘Add Cluster’ 
 2.	You can choose any type of cloud provider you want; I chose Amazon EC2 
@@ -124,7 +124,7 @@ Starting a Rancher cluster
 15.	Leave all the rest as default and click Create. Rancher will take some time to provision your cluster. 
 16.	Once the cluster is ready, you will be able to see the health worker nodes under your cluster. You will also be able to see the new instances created on the AWS console.
 
-Deploying the docker image to rancher 
+**Deploying the docker image to rancher **
 
 1.	In Rancher, click on the top left side and choose your cluster. 
 2.	Click on Projects/Namespaces. Create a project and a namespace to make it easier to locate your running pods 
