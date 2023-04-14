@@ -1,5 +1,33 @@
 # Movie-Review-Feedback-form
 
+Understanding on AWS S3, IAM and EC2:
+
+**Amazon S3 (Simple Storage Service):**
+- S3 is a scalable and durable object storage service provided by AWS.
+- It allows users to store and retrieve files, such as documents, images, videos, and backups, in the cloud.
+- S3 provides high durability, low latency, and unlimited storage capacity.
+- It is highly scalable, allowing users to store and retrieve any amount of data.
+- S3 provides features such as versioning, access control, and encryption to ensure data security.
+- S3 can be used to store data for various use cases, such as data backup and restore, big data analytics, mobile and gaming applications, and content distribution.
+
+
+**Amazon EC2 (Elastic Compute Cloud):**
+- EC2 is a virtual server provided by AWS that allows users to run applications in the cloud.
+- It provides resizable compute capacity in the form of virtual machines (VMs) known as instances.
+- Users can choose from various pre-configured instance types or create custom instances based on their computing requirements.
+- EC2 instances can run a wide range of operating systems, and users have full control over the configuration, security, and networking aspects of the instances.
+- EC2 allows users to scale up or down their compute capacity based on demand, making it suitable for a variety of workloads, such as web applications, databases, and data processing.
+
+
+**AWS IAM (Identity and Access Management):**
+- IAM is a service that allows users to manage access to AWS resources securely.
+- It provides features for creating and managing AWS users, groups, and roles, and defining their permissions.
+- IAM allows users to control access to AWS services and resources based on the principle of least privilege, which means granting only the necessary permissions for users to perform their tasks.
+- IAM provides features such as multi-factor authentication (MFA), password policies, and integration with AWS CloudTrail for monitoring and auditing.
+- IAM enables users to create and manage fine-grained access control policies to govern the actions that can be performed on AWS resources by different users or groups.
+
+In summary, Amazon S3 is a scalable object storage service, EC2 is a virtual server for running applications, and IAM is a service for managing access to AWS resources securely. Together, they form the foundation of AWS cloud computing, providing storage, compute, and access control capabilities for a wide range of use cases.
+
 - AWS S3 Form Link - https://movie-review-asriram2.s3.us-east-2.amazonaws.com/feedbackform.html
 
 - Bucket name: movie-review-asriram2
@@ -8,7 +36,7 @@
 
 - WAR file attached in this code
 
-- **feedbackform.html - Description**
+**feedbackform.html - Description**
 
 This HTML code represents a customer feedback form for movie reviews. Let's go through the different sections and elements of the code:
 
