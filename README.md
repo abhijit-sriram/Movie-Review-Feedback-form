@@ -1,6 +1,14 @@
 # Movie-Review-Feedback-form
 
-**feedbackform.html - Description**
+- AWS S3 Form Link - https://movie-review-asriram2.s3.us-east-2.amazonaws.com/feedbackform.html
+
+- Bucket name: movie-review-asriram2
+
+- AWS EC2 Instance created - ec2-3-134-77-203.us-east-2.compute.amazonaws.com  (attached .pem file)
+
+- WAR file attached in this code
+
+- **feedbackform.html - Description**
 
 This HTML code represents a customer feedback form for movie reviews. Let's go through the different sections and elements of the code:
 
