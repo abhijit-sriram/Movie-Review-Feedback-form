@@ -83,7 +83,7 @@ Creating a Docker image and pushing it to DockerHub
 2.	In Eclipse, create a file called Dockerfile. Docker requires the file to be called ‘Dockerfile’ 
 3.	Build the project on eclipse and put the war file in the same folder as the Dockerfile. Note that Feedbackform is the display name of my Tomcat application. 
 4.	In the DockerFile, use the FROM command to get the initial image for the build. We want to run the war file in Tomcat so we should use the tomcat image: FROM tomcat:9.0-jdk15 
-5.	Next, we need to drop the war file in the webapps folder: COPY moviereview.war /usr/local/tomcat/webapps/ 
+5.	Next, we need to drop the war file in the webapps folder: COPY SurveyForm.war /usr/local/tomcat/webapps/ 
 6.	On the command line, use this command: ‘docker build --tag moviereview:0.1 .’ You can use whatever name and tag you want. 
 7.	Verify that the image is properly working by running ‘docker run -it -p 8182:8080 moviereview:0.1’ and open a browser at http://localhost:8182/Feedbackform
 8.	On the command line, login to docker using ‘docker login -u <your username>’ 
